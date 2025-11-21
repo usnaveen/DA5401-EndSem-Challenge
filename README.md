@@ -3,6 +3,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## NAVEEN US
+## DA25M020
+
 ## 📊 Project Overview
 
 This repository contains the complete solution for the **DA5401 Data Challenge** focused on automating the evaluation of Large Language Model (LLM) responses through metric learning and domain adaptation techniques.
@@ -52,58 +55,6 @@ Created **4097-dimensional feature vectors** comprising:
 - **Augmentation:** 15,000 synthetic negative samples (scores 0-3)
 - **Calibration:** Quantile-based mapping to handle distribution shift
 - **Cross-Validation:** 5-fold stratified CV
-
----
-
-## 📁 Repository Structure
-
-```
-da5401-2025-data-challenge/
-├── README.md                              # This file
-├── requirements.txt                       # Python dependencies
-│
-├── data/                                  # Dataset (not included in repo)
-│   ├── train.csv
-│   └── test.csv
-│
-├── augmentation_strategy/                 # Data augmentation pipeline
-│   ├── 1_analysis/
-│   │   └── 1_distribution_analysis.ipynb # Preliminary EDA
-│   └── 2_quick_augmentation/
-│       └── 2_quick_augmentation.ipynb    # Synthetic data generation
-│
-├── winning_strategy_calibrated.ipynb     # Main model training notebook
-├── comprehensive_analysis_and_modeling.ipynb # Complete pipeline
-│
-├── Report/                                # LaTeX report & visualizations
-│   ├── Kaggle Report.tex                 # Main report (687 lines)
-│   ├── images/                           # All figures (11 images)
-│   │   ├── score_distribution.png
-│   │   ├── distribution_gap.png
-│   │   ├── distribution_raincloud.png
-│   │   ├── metric_treemap.png
-│   │   ├── metric_categories.png
-│   │   ├── metric_frequency.png
-│   │   ├── text_lengths.png
-│   │   ├── embedding_space.png
-│   │   ├── embedding_tsne_simulation.png
-│   │   ├── model_comparison.png
-│   │   └── model_performance_ladder.png
-│   │
-│   └── image_generation_scripts/         # Scripts to regenerate all images
-│       ├── README.md
-│       ├── requirements.txt
-│       ├── generate_all_images.py        # Master script
-│       ├── 1_score_distribution.py
-│       ├── 2_metric_treemap.py
-│       ├── 3_text_lengths.py
-│       ├── 4_embedding_tsne.py
-│       └── 5_model_performance.py
-│
-└── models/                                # Trained models (not in repo)
-    ├── lgbm_model.pkl
-    └── xgb_model.pkl
-```
 
 ---
 
